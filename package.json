@@ -7,5 +7,8 @@
     "pc-bridge": "node jack_pc_bridge.js",
     "build": "node -e \"const fs=require('fs'); if(!fs.existsSync('public')) fs.mkdirSync('public',{recursive:true}); if(fs.existsSync('index.html') && !fs.existsSync('public/index.html')) fs.copyFileSync('index.html','public/index.html'); console.log('Jack Studio AI Production App verified in public/');\"",
     "start": "npx serve public -l 3000"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
   }
 }
